@@ -12,7 +12,7 @@ public class CloseButton extends Button {
 	private Color color1;
 	private Color color2;
 	
-	public static final int WIDTH = 60;
+	public static final int WIDTH = 80;
 	public static final int HEIGHT = 40;
 	
 	
@@ -33,8 +33,8 @@ public class CloseButton extends Button {
 		g2d.fill(bounds);
 		g2d.setColor(color2);
 		g2d.draw(bounds);
-		g2d.drawLine((int)(x + width/4), (int)(y + height/8), (int)(x+width*3/4), (int)(y+height*7/8));
-		g2d.drawLine((int)(x+width/4), (int)(y+height*7/8), (int)(x+width*3/4), (int)(y+height/8));
+		g2d.drawLine((int)(x + width/4), (int)(y + height/8), (int)(x + width*3/4), (int)(y + height*7/8));
+		g2d.drawLine((int)(x + width/4), (int)(y + height*7/8), (int)(x + width*3/4), (int)(y + height/8));
 		
 	}
 

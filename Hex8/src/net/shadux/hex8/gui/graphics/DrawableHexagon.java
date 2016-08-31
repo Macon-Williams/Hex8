@@ -16,12 +16,12 @@ public abstract class DrawableHexagon extends DrawableShape implements Clickable
 		resetCoords();
 	}
 	
-	public void setHeight(double height) {
+	public void setHeight(double height) { 
 		super.setHeight(height);
 		resetCoords();
 	}
 	
-	public void setWidth(double width) {
+	public void setWidth(double width) { 
 		super.setWidth(width);
 		resetCoords();
 	}
@@ -83,7 +83,7 @@ public abstract class DrawableHexagon extends DrawableShape implements Clickable
 
 	@Override
 	public void draw(Graphics2D g2d) {
-		g2d.setStroke(new BasicStroke(5));
+		g2d.setStroke(new BasicStroke(2));
 		g2d.drawPolygon(hexagon.xpoints, hexagon.ypoints, 6);
 	}
 	

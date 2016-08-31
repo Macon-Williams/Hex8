@@ -4,6 +4,7 @@ import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.RenderingHints;
 import java.awt.image.BufferedImage;
 import java.util.Random;
 
@@ -31,7 +32,8 @@ public class Canvas extends JPanel {
 	public void paint(Graphics g) {
 		g.drawImage(bufferedImage, 0, 0, this);
 		
-		g2d.setColor(Color.white);
+		g2d.setColor(Color.white); //sets background color
+		g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON); //Turns on antialiasing
 		g2d.fillRect(0, 0, getWidth(), getHeight());
 		
 		g2d.setColor(Color.black);

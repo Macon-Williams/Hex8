@@ -10,13 +10,14 @@ public class HexEight {
 	
 	
 	public static int GAMESTATE = GameState.STARTING;
-	public static int WIDTH = 1200;
-	public static int HEIGHT = 800;
+	public static int WIDTH = 800; //Hexagons currently scale to the resolution of the game
+	public static int HEIGHT = 600;
 	public static Window window;
 	public static GameMap gameMap;
 	
 	public HexEight() {
 		window = new Window(WIDTH, HEIGHT);
+		
 
 		Thread thread = new Thread(new GameLoop());
 		thread.start();

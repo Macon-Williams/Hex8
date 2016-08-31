@@ -12,8 +12,8 @@ import net.shadux.hex8.gui.graphics.game.EventHook;
 
 public class Triangle extends Entity implements EventHook {
 
-	public static final int WIDTH = 20;
-	public static final int HEIGHT = 20;
+	public static final int WIDTH = 10;
+	public static final int HEIGHT = 10;
 	
 	public Triangle() {
 		super(0, 0, WIDTH, HEIGHT);

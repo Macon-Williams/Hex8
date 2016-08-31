@@ -6,8 +6,8 @@ public abstract class DrawableShape extends Sprite implements Drawable {
 
 	public DrawableShape(double x, double y, double width, double height) {
 		super(x, y);
-		this.width = width;
-		this.height = height;
+		this.width = width; //Sets the width of the hexagons
+		this.height = height; //Sets the height of the hexagons
 	}
 
 	protected double width;

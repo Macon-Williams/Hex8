@@ -5,15 +5,19 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
 
+
 import javax.swing.JFrame;
+
 
 import net.shadux.hex8.HexEight;
 
+@SuppressWarnings("serial")
 public class Window extends JFrame implements MouseListener, MouseMotionListener {
 
 	private Canvas canvas;
 	
 	public Window(int width, int height) {
+		
 		canvas = new Canvas(width, height);
 		add(canvas);
 		setSize(width, height);
