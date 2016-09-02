@@ -12,8 +12,8 @@ import net.shadux.hex8.gui.graphics.game.EventHook;
 
 public class Triangle extends Entity implements EventHook {
 
-	public static final int WIDTH = 20;
-	public static final int HEIGHT = 20;
+	public static final int WIDTH = 10;
+	public static final int HEIGHT = 5;
 	
 	public Triangle() {
 		super(0, 0, WIDTH, HEIGHT);
@@ -27,7 +27,7 @@ public class Triangle extends Entity implements EventHook {
 		g2d.drawLine((int)(x+a), (int)(y+a), (int)(x-a), (int)(y+a));
 		g2d.drawLine((int)(x-a), (int)(y+a), (int)x, (int)(y-width));
 		
-		g2d.setColor(Color.blue);
+		//g2d.setColor(Color.blue);
 		//g2d.fillRect((int)x-2, (int)y-2, 4, 4);
 	}
 
