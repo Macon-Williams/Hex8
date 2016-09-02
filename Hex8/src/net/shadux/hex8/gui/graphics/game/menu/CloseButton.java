@@ -12,12 +12,12 @@ public class CloseButton extends Button {
 	private Color color1;
 	private Color color2;
 	
-	public static final int WIDTH = 80;
-	public static final int HEIGHT = 40;
+	public static final int WIDTH = 40;
+	public static final int HEIGHT = 20;
 	
 	
 	public CloseButton(double x, double y) {
-		super(x, y, WIDTH, HEIGHT);
+		super(x, y + 5, WIDTH, HEIGHT);
 		color1 = Color.red;
 		color2 = Color.black;
 	}

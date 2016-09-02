@@ -1,13 +1,13 @@
-package net.shadux.hex8.units;
+package net.shadux.hex8.unit;
 
-public class Knight {
-	private int attack = 6;
-	private int defense = 10;
-	private int move = 4;
+public class CrazyEight {
+	private int attack = 8;
+	private int defense = 8;
+	private int speed = 4;
+	private float health = 8;
 	private String name;
-	private float health = 6;
 	
-	Knight(String name) {
+	CrazyEight(String name) {
 		this.name = name;
 	}
 	
@@ -28,7 +28,7 @@ public class Knight {
 	}
 	
 	public int getMove() {
-		return move;
+		return speed;
 	}
 	
 	public float getHealth() {
@@ -38,4 +38,5 @@ public class Knight {
 	public String getName() {
 		return name;
 	}
+
 }
