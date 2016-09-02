@@ -1,9 +1,7 @@
 package net.shadux.hex8.gui.graphics.game;
 
-import java.awt.Color;
-import java.awt.Graphics2D;
 import java.awt.Point;
-import java.awt.Rectangle;
+
 
 import net.shadux.hex8.HexEight;
 import net.shadux.hex8.game.Entity;
@@ -13,11 +11,13 @@ public abstract class Button extends Entity implements Clickable {
 
 	
 	protected boolean mousedOver;
+	protected boolean clicked;
 	
 	public Button(double x, double y, double width, double height) {
 		super(x, y, width, height);
 		HexEight.gameMap.addClickable(this);
 		mousedOver = false;
+		clicked = false;
 	}
 
 	@Override
@@ -27,19 +27,19 @@ public abstract class Button extends Entity implements Clickable {
 		} else {
 			mousedOver = false;
 		}
-		mousedOver();
+		
 		return mousedOver;
 	}
 
 	@Override
 	public boolean clicked(Point p) {
 		if(bounds.contains(p)) {
-			clicked();
-			return true;
+			clicked = true;
+		} else {
+			clicked = false;
 		}
-		return false;
+		
+		return clicked;
 	}
 	
-	public abstract void clicked();
-	public abstract void mousedOver();
 }

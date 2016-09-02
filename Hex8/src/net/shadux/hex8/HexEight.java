@@ -18,7 +18,6 @@ public class HexEight {
 	public HexEight() {
 		window = new Window(WIDTH, HEIGHT);
 		
-
 		Thread thread = new Thread(new GameLoop());
 		thread.start();
 		
