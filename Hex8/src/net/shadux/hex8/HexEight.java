@@ -36,7 +36,7 @@ public class HexEight {
 		@Override
 		public void run() {
 			gameMap = new GameMap(10, 20, window.getCanvas().getGraphics());
-			gameMap.addEntity(new CloseButton(WIDTH-10-CloseButton.WIDTH, 0));
+			//gameMap.addEntity(new CloseButton(WIDTH-10-CloseButton.WIDTH, 0));
 			
 			try {
 				gameMap.addEntity(new Triangle(), 1, 0);	

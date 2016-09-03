@@ -23,7 +23,8 @@ public class Window extends JFrame implements MouseListener, MouseMotionListener
 		setSize(width, height);
 		setLocationRelativeTo(null);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setUndecorated(true);
+		setUndecorated(false); //Game blends better with OS with this set to false
+		setResizable(false);
 		addMouseListener(this);
 		addMouseMotionListener(this);
 		setVisible(true);
