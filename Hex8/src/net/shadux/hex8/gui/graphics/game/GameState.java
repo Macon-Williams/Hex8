@@ -6,6 +6,7 @@ public class GameState {
 	public static final int RUNNING = 1;
 	public static final int STARTING = 2;
 	public static final int STOPPING = 3;
+	public static final int MENU = 4;
 	
 	
 }
