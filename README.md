@@ -11,4 +11,5 @@ Blue has a science focus, they gain an extra 20% of research power.
 
 Yellow has an economoic focus, they gain an extra 20% of economic power. (extra gold per turn)
 
-<img src="res/screenshot.gif" width="1300" height"920" />
+
+<img src="res/screenshot.gif" width="1300" height"920"/>
